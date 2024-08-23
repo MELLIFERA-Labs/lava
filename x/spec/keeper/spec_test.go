@@ -809,9 +809,9 @@ func TestApiCollectionsExpandAndInheritance(t *testing.T) {
 func TestCookbookSpecs(t *testing.T) {
 	ts := newTester(t)
 
-	getToTopMostPath := "../../.././cookbook/specs/"
-	// base specs needs to be proposed first
-	baseSpecs := []string{"ibc.json", "tendermint.json", "ethermint.json", "cosmoswasm.json", "cosmossdk.json", "cosmossdk_45.json", "cosmossdk_full.json", "ethereum.json", "solana.json"}
+    getToTopMostPath := "../../.././my_specs/"
+    // base specs needs to be proposed first
+    baseSpecs := []string{"ibc.json", "tendermint.json", "cosmoswasm.json", "cosmossdk.json", "cosmossdk50.json" }
 
 	Specs, err := getAllFilesInDirectory(getToTopMostPath)
 	require.NoError(t, err)
